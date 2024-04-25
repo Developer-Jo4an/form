@@ -1,0 +1,19 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 9  | /   @include menu-visible {
+ * 10 | |     height: 100vh;
+ * 11 | \   }
+ *    '
+ *   ..\components\layouts\MainLayout.scss 9:3  @import
+ *   components.scss 3:9                        root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 9  \2502  \250c    @include menu-visible {\a 10 \2502  \2502      height: 100vh;\a 11 \2502  \2514    }\a    \2575 \a   ..\\components\\layouts\\MainLayout.scss 9:3  @import\a   components.scss 3:9                        root stylesheet";
+}
